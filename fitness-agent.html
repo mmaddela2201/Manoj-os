@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fitness AI Agent - Manoj OS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="agent-page">
+
+
+        <!-- BACK TO MANOJ OS -->
+
+        <a href="index.html" class="back-link">
+            ← Back to Manoj OS
+        </a>
+
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="agent-page-header">
+
+            <h1>MANOJ'S FITNESS AI AGENT</h1>
+
+            <p class="agent-version">
+                Version 1.0
+            </p>
+
+            <p class="fitness-intro">
+                My first AI agent is designed to collect health data,
+                transform it into reliable daily context, and generate
+                personalized coaching based on recovery, activity,
+                nutrition, hydration, and body metrics.
+            </p>
+
+        </div>
+
+
+
+        <!-- FITNESS AI AGENT DETAILS -->
+
+        <div class="agent-details-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="fitness-card expandable-card">
+
+                <h2>WHAT IT DOES?</h2>
+
+                <p>
+                    Collects health data from Google Health APIs,
+                    processes the raw information through dedicated
+                    summary nodes, builds AI-ready context, and produces
+                    personalized daily fitness coaching.
+                </p>
+
+                <button
+                    class="learn-more-button"
+                    onclick="toggleCard('what-it-does-details', this)">
+                    Learn More ↓
+                </button>
+
+
+                <div
+                    class="card-details"
+                    id="what-it-does-details">
+
+                    <p>
+                        <strong>COLLECT</strong><br>
+                        Retrieves health information from connected
+                        data sources for the selected health report date.
+                    </p>
+
+                    <p>
+                        <strong>TRANSFORM</strong><br>
+                        Raw API responses are processed by dedicated
+                        Summary nodes that filter, validate, aggregate,
+                        and normalize the data.
+                    </p>
+
+                    <p>
+                        <strong>UNDERSTAND</strong><br>
+                        The processed metrics are combined into structured
+                        AI Context so the agent receives useful information
+                        instead of raw API data.
+                    </p>
+
+                    <p>
+                        <strong>COACH</strong><br>
+                        The AI Agent uses that context to generate
+                        personalized daily fitness and recovery guidance.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 2 -->
+
+            <div class="fitness-card expandable-card">
+
+                <h2>WHAT HEALTH DATA IT USES?</h2>
+
+                <p>
+                    Sleep, Resting Heart Rate, Steps, Weight,
+                    Calories Burned, Nutrition, Protein,
+                    Hydration, and Recovery data.
+                </p>
+
+                <button
+                    class="learn-more-button"
+                    onclick="toggleCard('health-data-details', this)">
+                    Learn More ↓
+                </button>
+
+
+                <div
+                    class="card-details"
+                    id="health-data-details">
+
+                    <p>
+                        <strong>SLEEP</strong><br>
+                        Sleep duration and available sleep information
+                        help provide recovery context.
+                    </p>
+
+                    <p>
+                        <strong>RESTING HEART RATE</strong><br>
+                        Resting heart rate contributes another signal
+                        when evaluating daily recovery.
+                    </p>
+
+                    <p>
+                        <strong>ACTIVITY</strong><br>
+                        Steps and calories burned provide information
+                        about daily movement and activity load.
+                    </p>
+
+                    <p>
+                        <strong>BODY METRICS</strong><br>
+                        Weight data is included while also considering
+                        when the measurement was recorded.
+                    </p>
+
+                    <p>
+                        <strong>NUTRITION & PROTEIN</strong><br>
+                        Logged food and protein intake support nutrition
+                        analysis while accounting for data completeness.
+                    </p>
+
+                    <p>
+                        <strong>HYDRATION</strong><br>
+                        Water intake is evaluated using both total volume
+                        and meaningful hydration timing.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div class="fitness-card expandable-card">
+
+                <h2>HOW IT REASONS?</h2>
+
+                <p>
+                    The agent considers data quality, manual sleep,
+                    split sleep, weight freshness, hydration timing,
+                    nutrition completeness, and recovery signals
+                    before generating recommendations.
+                </p>
+
+                <button
+                    class="learn-more-button"
+                    onclick="toggleCard('reasoning-details', this)">
+                    Learn More ↓
+                </button>
+
+
+                <div
+                    class="card-details"
+                    id="reasoning-details">
+
+                    <p>
+                        <strong>DATA QUALITY</strong><br>
+                        The system considers whether available information
+                        is reliable enough to support a confident conclusion.
+                    </p>
+
+                    <p>
+                        <strong>SLEEP CONTEXT</strong><br>
+                        The reasoning layer can account for manual sleep
+                        and split sleep instead of assuming every record
+                        represents one complete sleep period.
+                    </p>
+
+                    <p>
+                        <strong>WEIGHT FRESHNESS</strong><br>
+                        Weight measurements are evaluated relative to
+                        the health report's target date.
+                    </p>
+
+                    <p>
+                        <strong>HYDRATION TIMING</strong><br>
+                        Closely grouped hydration logs can be clustered
+                        into meaningful drinking events instead of being
+                        treated as completely separate hydration opportunities.
+                    </p>
+
+                    <p>
+                        <strong>NUTRITION COMPLETENESS</strong><br>
+                        Nutrition and energy-balance conclusions are treated
+                        cautiously when the available food data may
+                        be incomplete.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 4 -->
+
+            <div class="fitness-card expandable-card">
+
+                <h2>WHAT YOU RECEIVE?</h2>
+
+                <p>
+                    A structured AI coaching report containing
+                    recovery insights, nutrition guidance,
+                    hydration analysis, training readiness,
+                    and focused recommendations for the day.
+                </p>
+
+                <button
+                    class="learn-more-button"
+                    onclick="toggleCard('output-details', this)">
+                    Learn More ↓
+                </button>
+
+
+                <div
+                    class="card-details"
+                    id="output-details">
+
+                    <p>
+                        <strong>DAILY STATUS</strong><br>
+                        A high-level interpretation of the day's
+                        overall readiness.
+                    </p>
+
+                    <p>
+                        <strong>RECOVERY</strong><br>
+                        Coaching based on sleep, recovery signals,
+                        and available supporting health data.
+                    </p>
+
+                    <p>
+                        <strong>NUTRITION</strong><br>
+                        Guidance based on logged nutrition,
+                        protein intake, and available energy information.
+                    </p>
+
+                    <p>
+                        <strong>HYDRATION</strong><br>
+                        Evaluation of total water intake and how
+                        hydration was distributed across the day.
+                    </p>
+
+                    <p>
+                        <strong>TRAINING READINESS</strong><br>
+                        A recommendation for how aggressively or
+                        conservatively to approach training.
+                    </p>
+
+                    <p>
+                        <strong>TODAY'S FOCUS</strong><br>
+                        A short set of practical actions generated
+                        for the day.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 5 -->
+
+            <div class="fitness-card expandable-card">
+
+                <h2>HOW IT WORKS?</h2>
+
+                <p>
+                    Google Health API → n8n Data Pipeline →
+                    Summary Nodes → AI Context → AI Agent →
+                    HTML Email Report
+                </p>
+
+                <button
+                    class="learn-more-button"
+                    onclick="toggleCard('how-it-works-details', this)">
+                    Learn More ↓
+                </button>
+
+
+                <div
+                    class="card-details"
+                    id="how-it-works-details">
+
+                    <p>
+                        <strong>01 — COLLECT</strong><br>
+                        Google Health APIs retrieve the raw health data
+                        used by the Fitness AI Agent.
+                    </p>
+
+                    <p>
+                        <strong>02 — PROCESS</strong><br>
+                        Dedicated Summary nodes filter, validate,
+                        aggregate, and normalize the raw health data.
+                    </p>
+
+                    <p>
+                        <strong>03 — BUILD CONTEXT</strong><br>
+                        The AI Context layer combines processed metrics
+                        into structured information for AI reasoning.
+                    </p>
+
+                    <p>
+                        <strong>04 — REASON</strong><br>
+                        The AI Agent evaluates recovery, sleep, activity,
+                        nutrition, hydration, body metrics,
+                        and data quality.
+                    </p>
+
+                    <p>
+                        <strong>05 — DELIVER</strong><br>
+                        The final coaching response is transformed
+                        into an HTML fitness report and delivered
+                        automatically.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 6 -->
+
+            <div class="fitness-card expandable-card">
+
+                <h2>WHAT'S NEXT?</h2>
+
+                <p>
+                    Future versions will introduce historical trends,
+                    workout intelligence, deeper recovery analysis,
+                    long-term coaching memory, dashboards,
+                    and cloud infrastructure.
+                </p>
+
+                <button
+                    class="learn-more-button"
+                    onclick="toggleCard('whats-next-details', this)">
+                    Learn More ↓
+                </button>
+
+
+                <div
+                    class="card-details"
+                    id="whats-next-details">
+
+                    <p>
+                        <strong>HISTORICAL TRENDS</strong><br>
+                        Move beyond single-day analysis by comparing
+                        health and performance patterns across longer periods.
+                    </p>
+
+                    <p>
+                        <strong>WORKOUT INTELLIGENCE</strong><br>
+                        Introduce deeper workout information so coaching
+                        can consider training history and
+                        exercise-specific context.
+                    </p>
+
+                    <p>
+                        <strong>LONG-TERM MEMORY</strong><br>
+                        Allow future versions of the agent to reason
+                        using relevant historical context instead of
+                        treating every day independently.
+                    </p>
+
+                    <p>
+                        <strong>DASHBOARDS</strong><br>
+                        Build visual interfaces for exploring health metrics,
+                        AI insights, and longer-term trends.
+                    </p>
+
+                    <p>
+                        <strong>CLOUD INFRASTRUCTURE</strong><br>
+                        Evolve the system toward cloud-hosted infrastructure
+                        as the project grows beyond the current architecture.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- HOW IT'S BUILT -->
+
+        <div class="architecture-section">
+
+            <h2>HOW IT'S BUILT</h2>
+
+            <p class="architecture-intro">
+                The Fitness AI Agent runs through an automated n8n workflow
+                that collects health data, transforms it into structured
+                context, sends that context through AI reasoning, and
+                delivers a personalized daily fitness report.
+            </p>
+
+
+            <div class="workflow-preview">
+
+                <img
+                    src="images/fitness-agent-workflow.png"
+                    alt="Fitness AI Agent n8n workflow architecture"
+                >
+
+            </div>
+
+
+            <p class="workflow-caption">
+                Current Fitness AI Agent Version 1.0 workflow.
+            </p>
+
+        </div>
+
+
+
+        <!-- REAL PRODUCT OUTPUT -->
+
+        <div class="live-demo">
+
+            <h2>SEE IT IN ACTION</h2>
+
+            <p class="live-demo-intro">
+                This is a real daily report generated by the Fitness AI Agent
+                using health, recovery, nutrition, hydration, and activity data.
+            </p>
+
+
+            <div class="report-preview">
+
+                <img
+                    src="images/fitness-email-report.png"
+                    alt="Real daily Fitness AI Agent email report"
+                >
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- INTERACTIVE CARD LOGIC -->
+
+    <script>
+
+        function toggleCard(detailsId, button) {
+
+            const currentDetails =
+                document.getElementById(detailsId);
+
+            const isAlreadyOpen =
+                currentDetails.classList.contains("show");
+
+
+            /*
+                First close every currently open card.
+            */
+
+            document
+                .querySelectorAll(".card-details.show")
+                .forEach(function(details) {
+
+                    details.classList.remove("show");
+
+                    const card =
+                        details.closest(".fitness-card");
+
+                    const cardButton =
+                        card.querySelector(".learn-more-button");
+
+                    cardButton.textContent = "Learn More ↓";
+
+                });
+
+
+            /*
+                If the clicked card wasn't already open,
+                open it now.
+            */
+
+            if (!isAlreadyOpen) {
+
+                currentDetails.classList.add("show");
+
+                button.textContent = "Show Less ↑";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1068 @@
+body { 
+    margin: 0; 
+
+    font-family: 
+        Arial, 
+        Helvetica, 
+        sans-serif; 
+
+    background-color: #f5f5f7; 
+
+    color: #1d1d1f; 
+} 
+
+
+html { 
+    scroll-behavior: smooth; 
+} 
+
+
+.hero { 
+    min-height: 100vh; 
+
+    display: flex; 
+
+    flex-direction: column; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    text-align: center; 
+
+    padding: 40px; 
+} 
+
+
+.hero h1 { 
+    font-size: 64px; 
+
+    margin-bottom: 12px; 
+} 
+
+
+.subtitle { 
+    font-size: 24px; 
+
+    margin-bottom: 18px; 
+
+    color: #555; 
+} 
+
+
+.description { 
+    font-size: 20px; 
+
+    max-width: 650px; 
+
+    line-height: 1.6; 
+
+    margin-bottom: 32px; 
+
+    color: #666; 
+} 
+
+
+.primary-button { 
+    display: inline-block; 
+
+    text-decoration: none; 
+
+    font-size: 17px; 
+
+    font-weight: 600; 
+
+    padding: 14px 28px; 
+
+    border-radius: 980px; 
+
+    background-color: #1d1d1f; 
+
+    color: white; 
+
+    cursor: pointer; 
+
+    transition: opacity 0.2s ease; 
+} 
+
+
+.primary-button:hover { 
+    opacity: 0.8; 
+} 
+
+
+.about { 
+    min-height: 100vh; 
+
+    display: flex; 
+
+    flex-direction: column; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    text-align: center; 
+
+    padding: 80px 40px; 
+
+    background-color: white; 
+} 
+
+
+.about h2 { 
+    font-size: 48px; 
+
+    margin-bottom: 24px; 
+} 
+
+
+.about p { 
+    max-width: 750px; 
+
+    font-size: 19px; 
+
+    line-height: 1.7; 
+
+    color: #555; 
+
+    margin: 10px 0; 
+} 
+
+
+.why { 
+    min-height: 100vh; 
+
+    display: flex; 
+
+    flex-direction: column; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    text-align: center; 
+
+    padding: 80px 40px; 
+
+    background-color: #f5f5f7; 
+} 
+
+
+.why h2 { 
+    font-size: 48px; 
+
+    margin-bottom: 24px; 
+} 
+
+
+.why p { 
+    max-width: 750px; 
+
+    font-size: 19px; 
+
+    line-height: 1.7; 
+
+    color: #555; 
+
+    margin: 10px 0; 
+} 
+
+
+.agents { 
+    min-height: 100vh; 
+
+    display: flex; 
+
+    flex-direction: column; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    text-align: center; 
+
+    padding: 80px 40px; 
+
+    background-color: white; 
+} 
+
+
+.agents h2 { 
+    font-size: 48px; 
+
+    margin-bottom: 40px; 
+} 
+
+
+.agent-card { 
+    max-width: 700px; 
+
+    padding: 40px; 
+
+    border: 1px solid #ddd; 
+
+    border-radius: 20px; 
+} 
+
+
+.agent-card h3 { 
+    font-size: 32px; 
+
+    margin-top: 10px; 
+} 
+
+
+.agent-card p { 
+    font-size: 18px; 
+
+    line-height: 1.7; 
+
+    color: #555; 
+} 
+
+
+.agent-status { 
+    font-weight: bold; 
+} 
+
+
+.fitness-agent { 
+    min-height: 100vh; 
+
+    padding: 100px 40px; 
+
+    text-align: center; 
+
+    background-color: #f5f5f7; 
+} 
+
+
+.fitness-agent h2 { 
+    font-size: 48px; 
+
+    margin-bottom: 10px; 
+} 
+
+
+.agent-version { 
+    font-size: 18px; 
+
+    font-weight: 600; 
+
+    color: #777; 
+
+    margin-bottom: 30px; 
+} 
+
+
+.fitness-intro { 
+    max-width: 800px; 
+
+    margin: 0 auto 50px; 
+
+    font-size: 20px; 
+
+    line-height: 1.7; 
+
+    color: #555; 
+} 
+
+
+.fitness-grid { 
+    max-width: 1000px; 
+
+    margin: 0 auto; 
+
+    display: grid; 
+
+    grid-template-columns: repeat(2, 1fr); 
+
+    gap: 24px; 
+
+    /* Prevents the card beside an expanded card
+       from stretching to the same height */
+    align-items: start;
+} 
+
+
+.fitness-card { 
+    padding: 32px; 
+
+    background-color: white; 
+
+    border: 1px solid #ddd; 
+
+    border-radius: 20px; 
+
+    /* Keeps content arranged vertically */
+    display: flex;
+
+    flex-direction: column;
+
+    /* Gives collapsed cards a consistent base height */
+    min-height: 260px;
+} 
+
+
+.fitness-card h3 { 
+    font-size: 24px; 
+
+    margin-top: 0; 
+} 
+
+
+.fitness-card p { 
+    font-size: 17px; 
+
+    line-height: 1.7; 
+
+    color: #555; 
+} 
+
+
+.architecture-preview { 
+    max-width: 1000px; 
+
+    margin: 40px auto 0; 
+
+    padding: 32px; 
+
+    background-color: white; 
+
+    border: 1px solid #ddd; 
+
+    border-radius: 20px; 
+} 
+
+
+.architecture-preview h3 { 
+    font-size: 24px; 
+
+    margin-top: 0; 
+} 
+
+
+.architecture-preview p { 
+    font-size: 18px; 
+
+    line-height: 1.8; 
+
+    color: #555; 
+} 
+
+
+.agent-page { 
+    min-height: 100vh; 
+
+    padding: 60px 40px 100px; 
+
+    background-color: #f5f5f7; 
+} 
+
+
+.back-link { 
+    display: inline-block; 
+
+    margin-bottom: 60px; 
+
+    text-decoration: none; 
+
+    color: #1d1d1f; 
+
+    font-weight: 600; 
+} 
+
+
+.back-link:hover { 
+    opacity: 0.6; 
+} 
+
+
+.agent-page-header { 
+    text-align: center; 
+
+    max-width: 850px; 
+
+    margin: 0 auto 60px; 
+} 
+
+
+.agent-page-header h1 { 
+    font-size: 56px; 
+
+    margin-bottom: 10px; 
+} 
+
+
+.agent-details-grid { 
+    max-width: 1100px; 
+
+    margin: 0 auto; 
+
+    display: grid; 
+
+    grid-template-columns: repeat(2, 1fr); 
+
+    gap: 24px; 
+
+    /* Prevents neighboring cards from stretching */
+    align-items: start;
+} 
+
+
+.agent-details-grid .fitness-card { 
+    text-align: left; 
+
+    padding: 36px; 
+
+    background-color: white; 
+
+    border: 1px solid #ddd; 
+
+    border-radius: 20px; 
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 260px;
+} 
+
+
+.agent-details-grid .fitness-card h2 { 
+    font-size: 22px; 
+
+    margin-top: 0; 
+
+    margin-bottom: 18px; 
+} 
+
+
+.agent-details-grid .fitness-card p { 
+    font-size: 17px; 
+
+    line-height: 1.7; 
+
+    color: #555; 
+} 
+
+
+.live-demo { 
+    max-width: 1100px; 
+
+    margin: 100px auto 0; 
+
+    text-align: center; 
+} 
+
+
+.live-demo h2 { 
+    font-size: 42px; 
+
+    margin-bottom: 20px; 
+} 
+
+
+.live-demo-intro { 
+    max-width: 750px; 
+
+    margin: 0 auto 40px; 
+
+    font-size: 18px; 
+
+    line-height: 1.7; 
+
+    color: #555; 
+} 
+
+
+.report-preview { 
+    background-color: white; 
+
+    padding: 20px; 
+
+    border: 1px solid #ddd; 
+
+    border-radius: 20px; 
+
+    overflow: hidden; 
+} 
+
+
+.report-preview img { 
+    width: 100%; 
+
+    height: auto; 
+
+    display: block; 
+
+    border-radius: 12px; 
+} 
+
+
+.architecture-section { 
+    max-width: 1100px; 
+
+    margin: 100px auto 0; 
+
+    text-align: center; 
+} 
+
+
+.architecture-section h2 { 
+    font-size: 42px; 
+
+    margin-bottom: 20px; 
+} 
+
+
+.architecture-intro { 
+    max-width: 800px; 
+
+    margin: 0 auto 40px; 
+
+    font-size: 18px; 
+
+    line-height: 1.7; 
+
+    color: #555; 
+} 
+
+
+.workflow-preview { 
+    background-color: white; 
+
+    padding: 20px; 
+
+    border: 1px solid #ddd; 
+
+    border-radius: 20px; 
+
+    overflow: hidden; 
+} 
+
+
+.workflow-preview img { 
+    width: 100%; 
+
+    height: auto; 
+
+    display: block; 
+
+    border-radius: 12px; 
+} 
+
+
+.workflow-caption { 
+    margin-top: 15px; 
+
+    font-size: 14px; 
+
+    color: #777; 
+} 
+
+
+/* Expandable Fitness Agent Cards */
+
+.card-details { 
+    display: none; 
+
+    margin-top: 25px; 
+} 
+
+
+.card-details.show { 
+    display: block; 
+} 
+
+
+.card-details p { 
+    margin-bottom: 20px; 
+} 
+
+
+.learn-more-button { 
+    /* Pushes all buttons toward the bottom
+       so they line up consistently */
+    margin-top: auto; 
+
+    align-self: flex-start;
+
+    padding: 10px 18px; 
+
+    border: none; 
+
+    border-radius: 20px; 
+
+    background: #1f1f1f; 
+
+    color: white; 
+
+    font-size: 14px; 
+
+    font-weight: 600; 
+
+    cursor: pointer; 
+} 
+
+
+.learn-more-button:hover { 
+    opacity: 0.8; 
+}
+/* Site Footer */
+
+.site-footer {
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: #1d1d1f;
+
+    color: white;
+}
+
+
+.site-footer p {
+    margin: 0 0 18px;
+
+    font-size: 14px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 24px;
+}
+
+
+.footer-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+/* Legal Pages */
+
+.legal-page {
+    min-height: 100vh;
+
+    padding: 60px 40px 100px;
+
+    background-color: #f5f5f7;
+}
+
+
+.legal-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 60px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 20px;
+}
+
+
+.legal-content h1 {
+    font-size: 48px;
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+}
+
+
+.legal-updated {
+    color: #777;
+
+    margin-bottom: 50px;
+}
+
+
+.legal-content h2 {
+    font-size: 24px;
+
+    margin-top: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+.legal-content p,
+.legal-content li {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+.legal-content ul {
+    padding-left: 24px;
+}
+/* Connect Section */
+
+.connect {
+    padding: 100px 40px;
+
+    text-align: center;
+
+    background-color: #f5f5f7;
+}
+
+
+.connect h2 {
+    font-size: 48px;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+}
+
+
+.connect p {
+    max-width: 700px;
+
+    margin: 10px auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+.connect-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-top: 35px;
+}
+/* ============================= */
+/* Responsive / Mobile Styling   */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 100vh;
+
+        padding: 30px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+
+        line-height: 1.1;
+    }
+
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+
+    .description {
+        font-size: 17px;
+
+        line-height: 1.6;
+
+        max-width: 100%;
+    }
+
+
+    .primary-button {
+        font-size: 15px;
+
+        padding: 12px 22px;
+    }
+
+
+
+    /* HOMEPAGE SECTIONS */
+
+    .about,
+    .why,
+    .agents {
+        min-height: auto;
+
+        padding: 80px 20px;
+    }
+
+
+    .about h2,
+    .why h2,
+    .agents h2 {
+        font-size: 34px;
+
+        line-height: 1.2;
+    }
+
+
+    .about p,
+    .why p {
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+
+
+    /* AI AGENT CARD */
+
+    .agent-card {
+        width: 100%;
+
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 28px 20px;
+    }
+
+
+    .agent-card h3 {
+        font-size: 26px;
+    }
+
+
+    .agent-card p {
+        font-size: 16px;
+    }
+
+
+
+    /* FITNESS AGENT PAGE */
+
+    .agent-page {
+        padding: 30px 16px 70px;
+    }
+
+
+    .back-link {
+        margin-bottom: 40px;
+    }
+
+
+    .agent-page-header {
+        margin-bottom: 40px;
+    }
+
+
+    .agent-page-header h1 {
+        font-size: 38px;
+
+        line-height: 1.15;
+    }
+
+
+    .fitness-intro {
+        font-size: 17px;
+
+        max-width: 100%;
+    }
+
+
+
+    /* FITNESS CARDS */
+
+    .fitness-grid,
+    .agent-details-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .fitness-card,
+    .agent-details-grid .fitness-card {
+        min-height: auto;
+
+        padding: 26px 22px;
+    }
+
+
+    .fitness-card h3,
+    .agent-details-grid .fitness-card h2 {
+        font-size: 21px;
+    }
+
+
+    .fitness-card p,
+    .agent-details-grid .fitness-card p {
+        font-size: 16px;
+    }
+
+
+    .learn-more-button {
+        margin-top: 18px;
+
+        font-size: 13px;
+
+        padding: 9px 16px;
+    }
+
+
+
+    /* ARCHITECTURE */
+
+    .architecture-section {
+        margin-top: 70px;
+    }
+
+
+    .architecture-section h2 {
+        font-size: 32px;
+    }
+
+
+    .architecture-intro {
+        font-size: 16px;
+
+        max-width: 100%;
+    }
+
+
+    .workflow-preview {
+        padding: 10px;
+    }
+
+
+    .workflow-preview img {
+        width: 100%;
+
+        height: auto;
+    }
+
+
+
+    /* REAL REPORT */
+
+    .live-demo {
+        margin-top: 70px;
+    }
+
+
+    .live-demo h2 {
+        font-size: 32px;
+    }
+
+
+    .live-demo-intro {
+        font-size: 16px;
+
+        max-width: 100%;
+    }
+
+
+    .report-preview {
+        padding: 10px;
+    }
+
+
+    .report-preview img {
+        width: 100%;
+
+        height: auto;
+    }
+
+
+
+    /* LEGAL PAGES */
+
+    .legal-page {
+        padding: 30px 16px 70px;
+    }
+
+
+    .legal-content {
+        padding: 30px 22px;
+
+        border-radius: 16px;
+    }
+
+
+    .legal-content h1 {
+        font-size: 36px;
+
+        line-height: 1.2;
+    }
+
+
+    .legal-content h2 {
+        font-size: 21px;
+    }
+
+
+    .legal-content p,
+    .legal-content li {
+        font-size: 16px;
+    }
+
+
+
+    /* FOOTER */
+
+    .site-footer {
+        padding: 35px 20px;
+    }
+
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+}
+/* CONNECT */
+
+.connect {
+    padding: 70px 20px;
+}
+
+
+.connect h2 {
+    font-size: 34px;
+}
+
+
+.connect p {
+    font-size: 16px;
+}
+
+
+.connect-links {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+}
