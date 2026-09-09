@@ -69,6 +69,10 @@ Structured Output Parser
 HTML Formatting
         ↓
 Gmail Delivery
+```
+
+
+
 
 ## 🛠️ Tech Stack
 
